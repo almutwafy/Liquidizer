@@ -1,0 +1,76 @@
+/*BEGIN RESPONSIVE GRID LAYOUT WITH FLEX BOX*/
+
+body {
+    background      : #ddd;
+    text-align      : center;
+}
+section.page {
+    display         : flex;   /* use flexbox */
+    flex-wrap       : wrap;
+    flex-direction  : column; /* nested items stack vertically */
+    justify-content : space-between;
+    align-items     : stretch;
+    align-content   : stretch;
+    min-height      : 40em;
+}
+section.content {
+    display         : flex;
+    flex            : 1;      /* item expands to fill space within larger flexbox */
+    flex-direction  : row;    /* nested items arranged horizontally */
+    align-items     : stretch;
+    align-content   : stretch;
+    justify-content : space-between;
+}
+header, article, nav, aside, footer {
+    border          : thin solid #777;
+}
+article {
+    flex            : 1;      /* item expands to fill space within larger flexbox */
+}
+nav, aside {
+    min-width       : 150px;
+}
+header, article, nav, aside, footer {
+    border-radius   : 0.5em;
+    padding         : 0.5em;
+    margin          : 0.25em;
+}
+/* colors to clarify layout */
+header  { background-color  : gold;       }
+article { background-color  : lightgreen; }
+nav     { background-color  : lightblue;  }
+aside   { background-color  : plum;       }
+footer  { background-color  : pink;       }
+
+/*BEGIN MEDIA QUERIES*/
+
+@media only screen and (max-width:480px) {
+    section.page, section.content {
+        display    : block;     /* override flexbox */
+        min-height : inherit;
+    }
+    section.page {
+        padding    : 0.5em 0.25em 0.5em 0.25em;
+    }
+    aside {
+        display    : block;      /* put display: none to hide sidebar */
+    } 
+    article {
+        min-height : 20em;
+        margin     : 4em 0 1em 0;
+    }
+    header, nav {               /* compress header & nav */
+        min-height : 2em;
+        position   : absolute;
+        top        : 0.5em;
+    }
+    header {
+        left       : 0.5em;
+        width      : 60%;
+    }
+    nav {
+        right      : 0.5em;
+        width      : 20%;
+        min-width  : inherit;
+    }
+}

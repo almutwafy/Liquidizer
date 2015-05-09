@@ -1,0 +1,29 @@
+<html>
+<head>
+<link href="responsive.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src = "jquery.min.js"></script>
+<script type="text/javascript" src = "liquidizer.js"></script> 
+	<script>
+			$(document).ready(function() {
+				$("#header").liquidizer({
+										color: "#0000", 
+										backgroundColor: "gold",
+										fontFamily: "sans-serif",
+										fontStyle: "none",
+										fontWeight: "none"
+										});
+			});
+		</script>
+</head>
+<body>
+  <section class="page">
+    <header id = "header">    	HEADER       </header>
+    <section class="content">
+      <nav id = "nav">     		NAV          </nav>
+      <article id = "content"> 	MAIN CONTENT </article>
+      <aside id = "sidebar">   	SIDEBAR      </aside>
+    </section>
+    <footer id = "footer">    	FOOTER       </footer>
+  </section>
+</body>
+</html>
