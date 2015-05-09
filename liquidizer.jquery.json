@@ -1,0 +1,34 @@
+{
+    "name": "liquidizer.jquery.json",
+    "title": "jQuery Liquidizer",
+    "description": "Liquidizer.js is a responsive layout jQuery plug-in with dynamic attributes",
+    "keywords": [
+        "Responsive",
+        "Attributes"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Abdulrehman A. Mohamed",
+        "url": "https://github.com/almutwafy/Liquidizer/readme.txt"
+    },
+    "maintainers": [
+        {
+            "name": "almutwafy",
+            "email": "almutwafy@gmail.com",
+            "url": "http://github.com/almutwafy/Liquidizer"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GNU",
+            "url": "https://github.com/almutwafy/Liquidizer/readme.txt"
+        }
+    ],
+    "bugs": "https://github.com/almutwafy/Liquidizer",
+    "homepage": "https://github.com/almutwafy/Liquidizer",
+    "docs": "https://github.com/almutwafy/Liquidizer/readme.txt",
+    "download": "http://code.jquery.com/#Liquidizer",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
